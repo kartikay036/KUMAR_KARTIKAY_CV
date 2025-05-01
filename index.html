@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1.2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #1dcd9f;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section:hover {
+            background: #f9f9f9;
+            transform: scale(1.02);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .contact {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <h1>KUMAR KARTIKAY</h1>
+        <div class="contact">
+            📧 kkartikay848@gmail.com • 📞 91+ 9557133339 • 📍 Home-Town: Palam
+        </div>
+        <br>
+        <div class="section">
+            <h2>Profile</h2><br>
+            <p>I am a intermediate Creative Designer, creating visually stunning and user-friendly items. I specialize in
+                responsive design, ensuring seamless experiences across all devices. My goal is to bring your vision to life with
+                creative and innovative graphic solutions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>UI Design & UX Design.</li>
+                <li>Product design.</li>
+                <li>Visual design.</li>
+                <li>Wireframing & Prototyping.</li>
+                <li>Illustrations useing PenPot.</li>
+                <li>User Research & Usability Testing.</li>
+                <li>Design Systems & Accessibility Best
+                    Practices.</li>
+                <li>Interaction Design & Information
+                    Architecture.</li>
+                    <li>HTML/CSS/JAVASCRIPT knowledge.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <br>
+            <p><strong>UIX DESIGN(Frontend Dev)</strong><strong> – self-create projects (2024–Present)</strong></p>
+            <ul>
+                <h3><ol>Designing projects</ol></h3>
+                <li>Designed a modern and user-centric mobile app and website for Punjab National Bank (PNB) focusing on
+                    simplicity, trust, and digital banking efficiency.</li>
+                <li>Crafted intuitive UX flows and clean UI elements to enhance customer engagement and streamline
+                    financial services.</li>
+                <li> a comprehensive case study showcasing research, design process, wireframes, prototypes,
+                    and final outcomes.</li>
+            </ul>
+            <ul>
+                <h3><ol>Coding projects</ol></h3>
+                <li>Designed a modern and user-centric mobile app and website for Punjab National Bank (PNB) focusing on
+                    simplicity, trust, and digital banking efficiency.</li>
+                <li>Crafted intuitive UX flows and clean UI elements to enhance customer engagement and streamline
+                    financial services.</li>
+                <li> a comprehensive case study showcasing research, design process, wireframes, prototypes,
+                    and final outcomes.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2><br>
+            <p><strong>10th pass-out in Computer Science</strong> Kendriya Vidyalaya Sangathan (2020-2021)</p>
+            <p><strong>Web & UIX design in Computer Science</strong> Gayatri devi foundation (2023-2024) </p>
+            <p><strong>12th pass-out in Computer Science</strong> NIOS BOARD (2024–2025)</p>
+        </div>
+    </div>
+</body>
+</html>
